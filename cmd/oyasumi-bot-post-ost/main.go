@@ -32,8 +32,7 @@ func main() {
 	lo.Must(mstdn.PostStatus(
 		context.Background(),
 		&mastodon.Toot{
-			Status:     video.Title + "\n" + "https://youtu.be/" + video.ID,
-			Visibility: "unlisted",
+			Status: video.Title + "\n" + "https://youtu.be/" + video.ID,
 		},
 	))
 }
